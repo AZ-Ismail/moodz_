@@ -1,0 +1,252 @@
+<?xml version="1.0" ?>
+<robot name="newtrial" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find newtrial_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find newtrial_description)/urdf/newtrial.trans" />
+<xacro:include filename="$(find newtrial_description)/urdf/newtrial.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.23410783994686515 0.008891736243104407 0.3229984698080418"/>
+    <mass value="45.31428377967853"/>
+    <inertia ixx="0.286619" ixy="-0.000299" ixz="-0.006278" iyy="0.523195" iyz="0.000324" izz="0.286478"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://newtrial_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://newtrial_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="JAW_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.05934653060928424 0.08495428160357854 0.0017824470420595984"/>
+    <mass value="18.75878094663069"/>
+    <inertia ixx="0.097417" ixy="0.074499" ixz="0.001405" iyy="0.132376" iyz="-0.001705" izz="0.194291"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.232666 -0.054182 -0.324424"/>
+    <geometry>
+      <mesh filename="package://newtrial_description/meshes/JAW_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.232666 -0.054182 -0.324424"/>
+    <geometry>
+      <mesh filename="package://newtrial_description/meshes/JAW_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="JAW_2_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.11719306446930884 0.07496766963144594 -0.02011833246683198"/>
+    <mass value="6.328442247675211"/>
+    <inertia ixx="0.03688" ixy="0.056178" ixz="-0.003462" iyy="0.100442" iyz="0.001735" izz="0.135075"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.083506 -0.214336 -0.298922"/>
+    <geometry>
+      <mesh filename="package://newtrial_description/meshes/JAW_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.083506 -0.214336 -0.298922"/>
+    <geometry>
+      <mesh filename="package://newtrial_description/meshes/JAW_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="JAW_3_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.054284213702084055 0.018776325440456543 0.04840197190567891"/>
+    <mass value="11.40386436403121"/>
+    <inertia ixx="0.049704" ixy="-0.02259" ixz="-0.001915" iyy="0.029859" iyz="-0.001061" izz="0.067217"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.220427 -0.387536 -0.287686"/>
+    <geometry>
+      <mesh filename="package://newtrial_description/meshes/JAW_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.220427 -0.387536 -0.287686"/>
+    <geometry>
+      <mesh filename="package://newtrial_description/meshes/JAW_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="JAW_4_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.03381921487349331 0.058095592134086216 0.0011072321904233573"/>
+    <mass value="3.736976429844003"/>
+    <inertia ixx="0.00754" ixy="-0.002537" ixz="6.7e-05" iyy="0.004588" iyz="-0.000171" izz="0.009441"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.060842 -0.578504 -0.341619"/>
+    <geometry>
+      <mesh filename="package://newtrial_description/meshes/JAW_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.060842 -0.578504 -0.341619"/>
+    <geometry>
+      <mesh filename="package://newtrial_description/meshes/JAW_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="JAW_5_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.04233889498890879 0.036324896371280224 0.022412072114757986"/>
+    <mass value="2.672375979830758"/>
+    <inertia ixx="0.002539" ixy="-0.00034" ixz="-0.000209" iyy="0.0024" iyz="-0.000242" izz="0.002644"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.014078 -0.684157 -0.347263"/>
+    <geometry>
+      <mesh filename="package://newtrial_description/meshes/JAW_5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.014078 -0.684157 -0.347263"/>
+    <geometry>
+      <mesh filename="package://newtrial_description/meshes/JAW_5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="JAW_6_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.008995567630886034 0.011620994445017852 0.007139576448178253"/>
+    <mass value="0.600174321482272"/>
+    <inertia ixx="0.000291" ixy="2.4e-05" ixz="-8e-06" iyy="0.000284" iyz="2.1e-05" izz="0.000292"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.047695 -0.745344 -0.384951"/>
+    <geometry>
+      <mesh filename="package://newtrial_description/meshes/JAW_6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.047695 -0.745344 -0.384951"/>
+    <geometry>
+      <mesh filename="package://newtrial_description/meshes/JAW_6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="JAW_7__2__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.014702003765471636 0.02983252833634631 0.02035015108459265"/>
+    <mass value="0.11899227461667589"/>
+    <inertia ixx="5.1e-05" ixy="-2.5e-05" ixz="-1.6e-05" iyy="3.8e-05" iyz="-1.9e-05" izz="5.9e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.093311 -0.739826 -0.411728"/>
+    <geometry>
+      <mesh filename="package://newtrial_description/meshes/JAW_7__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.093311 -0.739826 -0.411728"/>
+    <geometry>
+      <mesh filename="package://newtrial_description/meshes/JAW_7__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="JAW_7_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.03731070053715123 0.014984089524093247 0.04169407779466605"/>
+    <mass value="0.1195825938842833"/>
+    <inertia ixx="4.1e-05" ixy="-2e-05" ixz="-2.6e-05" iyy="5.7e-05" iyz="-1.6e-05" izz="5e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.049875 -0.797153 -0.373146"/>
+    <geometry>
+      <mesh filename="package://newtrial_description/meshes/JAW_7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.049875 -0.797153 -0.373146"/>
+    <geometry>
+      <mesh filename="package://newtrial_description/meshes/JAW_7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rev1" type="continuous">
+  <origin rpy="0 0 0" xyz="0.232666 0.054182 0.324424"/>
+  <parent link="base_link"/>
+  <child link="JAW_1_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Rev2" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.14916 0.160154 -0.025502"/>
+  <parent link="JAW_1_1"/>
+  <child link="JAW_2_1"/>
+  <axis xyz="0.036944 -0.0 -0.999317"/>
+</joint>
+
+<joint name="Rev3" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.303933 0.1732 -0.011236"/>
+  <parent link="JAW_2_1"/>
+  <child link="JAW_3_1"/>
+  <axis xyz="-0.036944 -0.0 0.999317"/>
+</joint>
+
+<joint name="Rev4" type="continuous">
+  <origin rpy="0 0 0" xyz="0.159585 0.190968 0.053933"/>
+  <parent link="JAW_3_1"/>
+  <child link="JAW_4_1"/>
+  <axis xyz="0.497379 0.867339 0.018387"/>
+</joint>
+
+<joint name="Rev5" type="continuous">
+  <origin rpy="0 0 0" xyz="0.046764 0.105653 0.005644"/>
+  <parent link="JAW_4_1"/>
+  <child link="JAW_5_1"/>
+  <axis xyz="0.834758 -0.47271 -0.282354"/>
+</joint>
+
+<joint name="Rev6" type="continuous">
+  <origin rpy="0 0 0" xyz="0.061773 0.061187 0.037688"/>
+  <parent link="JAW_5_1"/>
+  <child link="JAW_6_1"/>
+  <axis xyz="0.550586 0.711267 0.436983"/>
+</joint>
+
+<joint name="Rev7" type="continuous">
+  <origin rpy="0 0 0" xyz="0.045616 -0.005518 0.026777"/>
+  <parent link="JAW_6_1"/>
+  <child link="JAW_7__2__1"/>
+  <axis xyz="-0.64315 0.027715 0.765239"/>
+</joint>
+
+<joint name="Rev8" type="continuous">
+  <origin rpy="0 0 0" xyz="0.00218 0.051809 -0.011805"/>
+  <parent link="JAW_6_1"/>
+  <child link="JAW_7_1"/>
+  <axis xyz="-0.64315 0.027715 0.765239"/>
+</joint>
+
+</robot>
