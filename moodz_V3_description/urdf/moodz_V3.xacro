@@ -1,0 +1,391 @@
+<?xml version="1.0" ?>
+<robot name="moodz_V3" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find moodz_V3_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find moodz_V3_description)/urdf/moodz_V3.trans" />
+<xacro:include filename="$(find moodz_V3_description)/urdf/moodz_V3.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.46581722808526116 0.08938415217570221 0.18085867117796395"/>
+    <mass value="48.99670859933122"/>
+    <inertia ixx="1.097685" ixy="-0.01051" ixz="-6.1e-05" iyy="2.487245" iyz="-2.5e-05" izz="1.595947"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="JAW_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.011146400355144637 0.08495399813413732 0.05831700033049275"/>
+    <mass value="18.75878094663069"/>
+    <inertia ixx="0.191428" ixy="-0.013466" ixz="-0.016464" iyy="0.132376" iyz="-0.073292" izz="0.100279"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.467941 -0.249381 -0.180854"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/JAW_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.467941 -0.249381 -0.180854"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/JAW_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="JAW_2_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.0055001589406244444 0.11193689172074517 0.08484701051399818"/>
+    <mass value="6.328442247675211"/>
+    <inertia ixx="0.134402" ixy="-0.008058" ixz="-0.006445" iyy="0.05509" iyz="-0.062654" izz="0.082904"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.46953 -0.409535 -0.332169"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/JAW_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.46953 -0.409535 -0.332169"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/JAW_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="JAW_3_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.05280184332367599 -0.019496359311163558 0.049738034500531714"/>
+    <mass value="11.40386436403121"/>
+    <inertia ixx="0.066776" ixy="0.002958" ixz="-0.003295" iyy="0.029279" iyz="0.022156" izz="0.050723"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.442441 -0.67946 -0.553318"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/JAW_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.442441 -0.67946 -0.553318"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/JAW_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="JAW_4_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.003562347374344743 -0.058849206124939324 0.032312847946089795"/>
+    <mass value="3.736976429844003"/>
+    <inertia ixx="0.009026" ixy="0.000207" ixz="-0.00034" iyy="0.004597" iyz="0.002638" izz="0.007945"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.375467 -0.486428 -0.705298"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/JAW_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.375467 -0.486428 -0.705298"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/JAW_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="JAW_5_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.011876701380709898 -0.0146140282000925 -0.057094191810916683"/>
+    <mass value="2.672375979830758"/>
+    <inertia ixx="0.002711" ixy="6.6e-05" ixz="0.000275" iyy="0.002759" iyz="-0.000152" izz="0.002113"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.35729 -0.389031 -0.765003"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/JAW_5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.35729 -0.389031 -0.765003"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/JAW_5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="JAW_6_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0062798416351029784 -0.003243570533161655 -0.014730562269392067"/>
+    <mass value="0.600174321482272"/>
+    <inertia ixx="0.000264" ixy="5e-06" ixz="-2.3e-05" iyy="0.0003" iyz="5e-06" izz="0.000304"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.332082 -0.36742 -0.676247"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/JAW_6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.332082 -0.36742 -0.676247"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/JAW_6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="JAW_7__2__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.01644535133494507 -0.014792855709221064 -0.032109312881303476"/>
+    <mass value="0.11899227461667589"/>
+    <inertia ixx="6.1e-05" ixy="5e-06" ixz="2.2e-05" iyy="7e-05" iyz="-1.1e-05" izz="1.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.354389 -0.375049 -0.628577"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/JAW_7__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.354389 -0.375049 -0.628577"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/JAW_7__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="JAW_7_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.006597045432837512 -0.01717131999646171 -0.0549242198909482"/>
+    <mass value="0.11958259388428337"/>
+    <inertia ixx="6.3e-05" ixy="5e-06" ixz="2e-05" iyy="6.9e-05" iyz="-1.2e-05" izz="1.6e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.28086 -0.364212 -0.662307"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/JAW_7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.28086 -0.364212 -0.662307"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/JAW_7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BASE_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0014419347697952056 0.03870945277366328 -0.0014260599463890578"/>
+    <mass value="45.31428377967853"/>
+    <inertia ixx="0.286619" ixy="-0.000299" ixz="-0.006278" iyy="0.523195" iyz="0.000324" izz="0.286478"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.467941 -0.165381 -0.180854"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/BASE_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.467941 -0.165381 -0.180854"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/BASE_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_wheel_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-1.2148733219419228e-07 -4.415074500441207e-09 0.01874962170952682"/>
+    <mass value="2.2891426387213216"/>
+    <inertia ixx="0.012225" ixy="-0.0" ixz="-0.0" iyy="0.012225" iyz="0.0" izz="0.023914"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.467941 -0.090381 -0.430854"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.467941 -0.090381 -0.430854"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_wheel_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-1.2148733191663652e-07 -4.415075235963961e-09 -0.018750378290472644"/>
+    <mass value="2.2891426387213216"/>
+    <inertia ixx="0.012225" ixy="-0.0" ixz="-0.0" iyy="0.012225" iyz="0.0" izz="0.023914"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.467941 -0.090381 0.069146"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.467941 -0.090381 0.069146"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lidar_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.457946113061272e-07 0.024999995584925327 -2.2062580068427096e-08"/>
+    <mass value="0.559596191420682"/>
+    <inertia ixx="0.000466" ixy="-0.0" ixz="-0.0" iyy="0.000699" iyz="0.0" izz="0.000466"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.217945 -0.215381 -0.181448"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.217945 -0.215381 -0.181448"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="camera_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.019999878512669045 -4.415075235963961e-09 -3.7829047316861875e-07"/>
+    <mass value="1.0259999999999998"/>
+    <inertia ixx="0.008003" ixy="-0.0" ixz="-0.0" iyy="0.007832" iyz="-0.0" izz="0.000445"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.167941 -0.090381 -0.180854"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.167941 -0.090381 -0.180854"/>
+    <geometry>
+      <mesh filename="package://moodz_V3_description/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rev1" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.084 0.0"/>
+  <parent link="BASE_1"/>
+  <child link="JAW_1_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="Rev2" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.001589 0.160154 0.151315"/>
+  <parent link="JAW_1_1"/>
+  <child link="JAW_2_1"/>
+  <axis xyz="-0.992582 0.0 0.121581"/>
+</joint>
+
+<joint name="Rev3" type="continuous">
+  <origin rpy="0 0 0" xyz="0.027089 0.269925 0.221149"/>
+  <parent link="JAW_2_1"/>
+  <child link="JAW_3_1"/>
+  <axis xyz="0.992582 -0.0 -0.121581"/>
+</joint>
+
+<joint name="Rev4" type="continuous">
+  <origin rpy="0 0 0" xyz="0.066974 -0.193032 0.15198"/>
+  <parent link="JAW_3_1"/>
+  <child link="JAW_4_1"/>
+  <axis xyz="0.05915 -0.873678 0.482895"/>
+</joint>
+
+<joint name="Rev5" type="continuous">
+  <origin rpy="0 0 0" xyz="0.018177 -0.097397 0.059705"/>
+  <parent link="JAW_4_1"/>
+  <child link="JAW_5_1"/>
+  <axis xyz="-0.909984 -0.246069 -0.333736"/>
+</joint>
+
+<joint name="Rev6" type="continuous">
+  <origin rpy="0 0 0" xyz="0.025208 -0.021611 -0.088756"/>
+  <parent link="JAW_5_1"/>
+  <child link="JAW_6_1"/>
+  <axis xyz="0.384337 -0.198491 -0.901602"/>
+</joint>
+
+<joint name="Rev7" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.022307 0.007629 -0.04767"/>
+  <parent link="JAW_6_1"/>
+  <child link="JAW_7__2__1"/>
+  <axis xyz="-0.201738 -0.971068 0.127787"/>
+</joint>
+
+<joint name="Rev8" type="continuous">
+  <origin rpy="0 0 0" xyz="0.051222 -0.003208 -0.01394"/>
+  <parent link="JAW_6_1"/>
+  <child link="JAW_7_1"/>
+  <axis xyz="-0.201738 -0.971068 0.127787"/>
+</joint>
+
+<joint name="Rev9" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.467941 0.165381 0.180854"/>
+  <parent link="base_link"/>
+  <child link="BASE_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="Rev10" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.467941 0.090381 0.430854"/>
+  <parent link="base_link"/>
+  <child link="right_wheel_1"/>
+  <axis xyz="-0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Rev11" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.467941 0.090381 -0.069146"/>
+  <parent link="base_link"/>
+  <child link="left_wheel_1"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="Rev12" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.217945 0.215381 0.181448"/>
+  <parent link="base_link"/>
+  <child link="lidar_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="Rigid13" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.167941 0.090381 0.180854"/>
+  <parent link="base_link"/>
+  <child link="camera_1"/>
+</joint>
+
+</robot>
